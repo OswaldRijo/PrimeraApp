@@ -32,10 +32,10 @@ public class ConfirmarDatos extends AppCompatActivity implements View.OnClickLis
 
         Bundle extras = getIntent().getExtras();
         nombre      = extras.getString("nombre");
-        fecNac      = extras.getString("fecNac");
-        email       = extras.getString("email");
-        telefono    = extras.getString("telefono");
-        descripcion = extras.getString("descripcion");
+        fecNac      = "Fecha de nacimiento: " + extras.getString("fecNac");
+        email       = "Email: " + extras.getString("email");
+        telefono    = "Telefono: " + extras.getString("telefono");
+        descripcion = "Descripcion: " + extras.getString("descripcion");
         btnEditar = (Button) findViewById(R.id.btnEditar);
         
         txtNombre = (TextView) findViewById(R.id.txtNombre);
