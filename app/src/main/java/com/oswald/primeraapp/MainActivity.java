@@ -108,7 +108,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 MainActivity.this.finish();
                 startActivity(intento);
 
-            }
+            }else
+                Snackbar.make(btnAceptar, "Debe rellenar todos los campos", Snackbar.LENGTH_LONG).show();
 
         }
 
